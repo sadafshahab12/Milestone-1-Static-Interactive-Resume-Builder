@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+.container {
+  background-color: #0d81ed;
+  margin: 5rem 8rem;
+  border-radius: 2rem;
+  padding: 2rem;
+}
+.container h1 {
+  font-size: 4rem;
+  color: #fcfcfc;
+  text-align: center;
+  padding-top: 3rem;
+}
+.logo {
+  padding: 4rem 0 0 0;
+}
+.logo img {
+  padding: 0.5rem;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 5rem;
+  object-fit: cover;
+  border: 2px solid #000;
+
+  display: block;
+  margin: 0 auto;
+}
+
+.personal-info h1 {
+  color: #fcfcfc;
+  font-size: 3rem;
+  padding-bottom: 2rem;
+}
+
+.contact-info {
+  background-color: #242121;
+  margin: 0 5rem;
+  display: flex;
+  justify-content: space-around;
+  height: 5rem;
+  border-radius: 5rem;
+}
+.display {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  letter-spacing: 0.1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.email {
+  color: #fcfcfc;
+}
+.phone {
+  color: #fcfcfc;
+}
+.social {
+  color: #fcfcfc;
+}
+.social a {
+  color: #fcfcfc;
+  text-decoration: none;
+}
+
+.professional-info h1 {
+  color: #fcfcfc;
+  font-size: 4rem;
+  padding: 8rem 6rem 0 6rem;
+  text-align: left;
+}
+.education,
+.experience,
+.skill {
+  width: 90%;
+  background-color: #242121;
+
+  margin: 5rem auto;
+  padding: 4rem 4rem 2rem 4rem;
+  box-shadow: 0.5rem 0.5rem #ffffff;
+}
+.edu-h,
+.exp-h,
+.skill-h {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.edu-h h2,
+.exp-h h2,
+.skill-h h2 {
+  width: 100%;
+  color: #fcfcfc;
+  font-size: 2rem;
+}
+.edu-h i,
+.exp-h i,
+.skill-h i {
+  color: #fcfcfc;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.edu-contain p,
+.exp-contain p,
+.skill-contain ul li {
+  font-size: 1.5rem;
+  color: #fcfcfc;
+  line-height: 3rem;
+  list-style: none;
+}
+.styling {
+  font-weight: 800;
+  padding-left: 2rem;
+}
+.box {
+  max-height: 0;
+  overflow: hidden;
+  padding-top: 2rem;
+  transition: max-height 1s ease;
+}
+.accordion.active .box {
+  max-height: 30rem;
+  animation: fade 1s ease-in;
+}
+.icon {
+  transition: transform 0.5s ease-in;
+}
+.accordion.active .icon {
+  transform: rotate(180deg);
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}

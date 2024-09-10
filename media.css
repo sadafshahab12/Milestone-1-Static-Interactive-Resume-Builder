@@ -1,0 +1,83 @@
+@media only screen and (max-width: 321px) {
+  html {
+    font-size: 31%;
+  }
+  .contact-info {
+    background-color: #242121;
+    width: 40rem;
+    display: block;
+    height: 10rem;
+    border-radius: 0rem;
+    padding: 1rem;
+    margin: 0 auto;
+  }
+  .display {
+    padding: 0.5rem 0;
+  }
+  .professional-info h1 {
+    font-size: 2rem;
+    padding: 4rem 0 0 0;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 376px) and (min-width: 350px){
+  html {
+    font-size: 33%;
+  }
+  .contact-info {
+    background-color: #242121;
+    width: 40rem;
+    display: block;
+    height: 10rem;
+    border-radius: 0rem;
+    padding: 1rem;
+    margin: 0 auto;
+  }
+  .display {
+    padding: 0.5rem 0;
+  }
+  .professional-info h1 {
+    font-size: 2rem;
+    padding: 4rem 0 0 0;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 426px) and (min-width: 400px){
+  html {
+    font-size: 50%;
+  }
+  .container {
+    background-color: #0d81ed;
+    margin: 5rem 3rem;
+    border-radius: 2rem;
+    padding: 2rem;
+  }
+  .contact-info {
+    background-color: #242121;
+    width: 40rem;
+    display: block;
+    height: 10rem;
+    border-radius: 0rem;
+    padding: 1rem;
+    margin: 0 auto;
+  }
+  .display {
+    padding: 0.5rem 0;
+  }
+  .professional-info h1 {
+    font-size: 2rem;
+    padding: 4rem 0 0 0;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 767px) and (max-width: 900px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (min-width: 2559px) {
+  html {
+    font-size: 135%;
+  }
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume Builder</title>
+
+  <!-- font font-awesome cdn  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- font family  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="resume.css" />
+  <link rel="stylesheet" href="media.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>Static Resume</h1>
+    <div class="personal-info">
+      <div class="logo">
+        <img src="./images/sadaf logo1.png" alt="profile-pic" />
+      </div>
+      <h1>Sadaf Shahab</h1>
+    </div>
+
+    <div class="contact-info">
+      <div class="email display">
+        <i class="fa-solid fa-envelope"></i>
+        <p>sadafshahab123@yahoo.com</p>
+      </div>
+      <div class="phone display">
+        <i class="fa-solid fa-phone"></i>
+        <p>0346-2698736</p>
+      </div>
+      <div class="social display">
+        <i class="fa-brands fa-linkedin"></i>
+        <a href="https://www.linkedin.com/in/sadaf-shahab-ssr123">LinkedIn Profile</a>
+      </div>
+    </div>
+
+    <div class="professional-info">
+      <h1>Professional Information</h1>
+    </div>
+    <div class="accordion">
+      <div class="education">
+        <div class="edu-h">
+          <h2>Education</h2>
+
+          <i class="fa-solid fa-chevron-down icon"></i>
+        </div>
+        <div class="edu-contain box">
+          <p>Passing Year: <span class="styling">2024</span></p>
+          <p>
+            Field of Study: <span class="styling">Bachelor in Commerce</span>
+          </p>
+          <p>Institute: <span class="styling">University of Karachi</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion">
+      <div class="experience">
+        <div class="exp-h">
+          <h2>Experience</h2>
+          <i class="fa-solid fa-chevron-down icon"></i>
+        </div>
+        <div class="exp-contain box">
+          <p>Three year of experience as an Accountant in School.</p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion">
+      <div class="skill">
+        <div class="skill-h">
+          <h2>Skills</h2>
+          <i class="fa-solid fa-chevron-down icon"></i>
+        </div>
+        <div class="skill-contain box">
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>Tailwind CSS</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="./app.js"></script>
+</body>
+
+</html>
