@@ -2,89 +2,108 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 html {
   font-size: 62.5%;
 }
 .container {
-  background-color: #0d81ed;
-  margin: 5rem 8rem;
+  background-color: #ff9c5f;
+  margin: 2rem auto;
   border-radius: 2rem;
   padding: 2rem;
+  width: 70%;
 }
 .container h1 {
-  font-size: 4rem;
-  color: #fcfcfc;
-  text-align: center;
-  padding-top: 3rem;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #171616;
+
+  padding-top: 1rem;
+}
+.top-content {
+  padding-left: 4rem;
 }
 .logo {
-  padding: 4rem 0 0 0;
+  padding: 2.5rem 0 2rem 0;
+  display: flex;
+
+  align-items: center;
+  gap: 1.5rem;
 }
 .logo img {
   padding: 0.5rem;
-  width: 10rem;
-  height: 10rem;
-  border-radius: 5rem;
+  width: 12rem;
+  height: 12rem;
+  border-radius: 10rem;
   object-fit: cover;
-  border: 2px solid #000;
-
+  border: 3px solid #000;
   display: block;
-  margin: 0 auto;
 }
-
-.personal-info h1 {
-  color: #fcfcfc;
-  font-size: 3rem;
-  padding-bottom: 2rem;
-}
-
-.contact-info {
-  background-color: #242121;
-  margin: 0 5rem;
+.title {
   display: flex;
-  justify-content: space-around;
-  height: 5rem;
-  border-radius: 5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
 }
-.display {
+.personal-info h1 {
+  color: #171616;
+  font-size: 4rem;
+  padding-bottom: 0.5rem;
+  font-weight: 800;
+}
+.badge {
+  font-size: 1rem;
+  text-align: center;
+  background: #3f3c3c;
+  color: #fcfcfc;
+  display: inline-block;
+  padding: 0.5rem 1.25rem;
+  border-radius: 3rem;
+  font-weight: 600;
+}
+.contact-head h1 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  font-weight: 600;
+}
+.contact-info {
+  background-color: #42413f;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem 3rem;
+  border-radius: 1rem;
+  width: 95%;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
+}
+.contact-icon {
   display: flex;
   align-items: center;
   gap: 2rem;
   letter-spacing: 0.1rem;
   font-size: 1.5rem;
   cursor: pointer;
-}
-.email {
   color: #fcfcfc;
-}
-.phone {
-  color: #fcfcfc;
-}
-.social {
-  color: #fcfcfc;
-}
-.social a {
-  color: #fcfcfc;
-  text-decoration: none;
 }
 
 .professional-info h1 {
-  color: #fcfcfc;
-  font-size: 4rem;
-  padding: 8rem 6rem 0 6rem;
+  color: #171616;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 6rem 0rem 0 4rem;
   text-align: left;
 }
 .education,
 .experience,
 .skill {
   width: 90%;
-  background-color: #242121;
-
-  margin: 5rem auto;
+  background-color: #3f3c3c;
+  margin: 3rem auto;
   padding: 4rem 4rem 2rem 4rem;
-  box-shadow: 0.5rem 0.5rem #ffffff;
+  box-shadow: 0rem 1rem 1rem #fcfcfc;
 }
 .edu-h,
 .exp-h,
@@ -99,6 +118,7 @@ html {
   width: 100%;
   color: #fcfcfc;
   font-size: 2rem;
+  cursor: pointer;
 }
 .edu-h i,
 .exp-h i,
@@ -116,8 +136,42 @@ html {
   line-height: 3rem;
   list-style: none;
 }
+.skill-contain ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.social-links ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.social-links ul li {
+  font-size: 1.5rem;
+  line-height: 3rem;
+  list-style: none;
+  cursor: pointer;
+  color: #fcfcfc;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  gap: 1rem;
+}
+.social-links ul li i {
+  font-size: 2rem;
+}
+.social-links ul li a {
+  text-decoration: none;
+  color: #fcfcfc;
+}
+.border {
+  height: 0.2rem;
+  width: 100%;
+  border: 2px solid #ff9c5f;
+  margin: 2rem 0;
+  border-radius: 2rem;
+}
 .styling {
-  font-weight: 800;
+  font-weight: 600;
   padding-left: 2rem;
 }
 .box {
@@ -127,7 +181,7 @@ html {
   transition: max-height 1s ease;
 }
 .accordion.active .box {
-  max-height: 30rem;
+  max-height: 50rem;
   animation: fade 1s ease-in;
 }
 .icon {
